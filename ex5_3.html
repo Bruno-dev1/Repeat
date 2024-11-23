@@ -1,0 +1,14 @@
+<script>
+    let num 
+    do{
+        num = Number(prompt("Insira um número"))
+        if(num == 0 || isNaN(num)){
+            alert("Númrto inválido")
+        }
+    }while(num == 0 || isNaN(num))
+    let pares = `Pares entra 1 e ${ num} : `
+    for (let i = 2; i <= num; i=i+2){
+        pares = pares + i + " , "
+    }
+alert(pares)
+</script>
